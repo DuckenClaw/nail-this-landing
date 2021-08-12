@@ -381,6 +381,10 @@ body {
   font-size: 15px;
 }
 
+html {
+  background: #fcfdfd;
+}
+
 .font-bold {
   font-weight: bold;
 }
@@ -391,6 +395,313 @@ body {
 
 .font-regular-moon {
   font-family: TTMoons;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.header-logo {
+  margin: 36px 368px 0 0;
+}
+
+.nav {
+  padding: 0;
+}
+
+.nav-ul {
+  list-style-type: none;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.nav-ul li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin: 54px 18px;
+}
+
+a[type=button] {
+  background-color: #AF8FEF;
+  color: white;
+  padding: 13.5px 32px;
+  margin-top: 40.5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+h1.say-goodbye {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 78px;
+  color: #112D57;
+  padding: 0;
+  margin: 0;
+}
+
+p.say-goodbye {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  color: #5C5C5C;
+  margin: 0;
+  padding: 0;
+}
+
+p.say-goodbye:first-of-type {
+  margin-top: 20px;
+}
+
+div.say-goodbye {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: url("/images/graywave-background.75d6c3c6.svg");
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  background-size: auto auto;
+  background-color: #ffffff;
+}
+
+div.say-goodbye a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-top: 36px;
+  padding: 23px 51px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+em {
+  font-style: normal;
+  color: #F79F77;
+}
+
+.say-goodbyeimg {
+  padding: 42px 202px;
+}
+
+article {
+  padding: 108px 135px;
+}
+
+container.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 130%;
+}
+
+.flex-container div {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  margin: 32px 40px;
+}
+
+.flex-container div h3 {
+  margin: 21px auto 0 40px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #FF9D56;
+  margin-bottom: 0;
+}
+
+.flex-container div p {
+  margin: 8px 42px 27px 40px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #112D57;
+}
+
+.flex-container div img {
+  margin: 26px 43px 0 43px;
+}
+
+section.why-this {
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+section.why-this container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section.why-this container div {
+  margin-right: 51px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  width: 365px;
+  height: 202px;
+}
+
+section.why-this container div h3 {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #FF9D56;
+}
+
+section.why-this container div p {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #112D57;
+}
+
+section.creator-of-nail-this {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.about-creator {
+  margin-right: 87px;
+}
+
+section.creator-of-nail-this h2 {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 130%;
+  color: #112D57;
+  text-align: start;
+  margin-bottom: 8px;
+}
+
+section.creator-of-nail-this h3 {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 130%;
+  color: #FF9D56;
+  margin: 0;
+  padding: 0;
+}
+
+.about-creator ul {
+  text-decoration: #AF8FEF;
+  padding: 24px 0 0 22px;
+  margin: 0;
+}
+
+.about-creator ul li {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  color: #112D57;
+}
+
+.creator-of-nail-this-img {
+  padding: 0;
+}
+
+article.proof-photos {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  padding-top: 0;
+}
+
+.diplom1, .diplom2, .diplom3 {
+  margin: 0;
+  padding: 0;
+  margin-right: 23px;
+}
+
+section.what-ull-b-doing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.standingded {
+  background: url("/images/standingded.05d8f3a4.png");
+  background-repeat: no-repeat;
+  background-position: 100px 0 0 0;
+}
+
+.first-b-doing, .second-b-doing, .third-b-doing {
+  margin-left: 40%;
+  margin-right: auto;
+}
+
+.first-b-doing h3 {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 170%;
+  color: #F5DC53;
+}
+
+.second-b-doing h3 {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 170%;
+  color: #FF9D56;
+}
+
+.third-b-doing h3 {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 130%;
+  color: #AF8FEF;
 }
 
 /*# sourceMappingURL=/styles.9316f574.css.map */

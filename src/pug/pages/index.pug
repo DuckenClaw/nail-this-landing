@@ -1,12 +1,96 @@
 extends ../layout/layout.pug
 
 block content
+  header.header 
+    .header-logo 
+      img(src="../../images/image1.png")
+    nav.nav
+      ul.nav-ul 
+        li 
+          a(href="") Для кого
+        li 
+          a(href="") О создателе
+        li 
+          a(href="") Как устроена практика
+        li 
+          a(href="") Отзывы о тренажере
+        li 
+          a(type="button" href="") Получить демо-версию
+
   main.main
-    .container
-      .wrapper 
-        .block 
-          img(src="", alt="")
-          a(href="") 
-        .block2
-          .block_title 
-            | dkfj;sdfj;sdkj
+    div.say-goodbye 
+      article
+        h1.say-goodbye Скажи "Goodbye"
+        p.say-goodbye неловкости в английском 
+        p.say-goodbye с разговорным тренажёром <em>Nail this</em>
+        a(type="button" href="") Получить демо-версию
+      .say-goodbyeimg
+        img(src="../../images/look_mob-41.png")
+    section.elaboration
+      h2.elaboration Тренажер <em>Nail this</em> это
+      container.flex-container
+        div 
+          img(src="../../images/svg/Icon_purse.svg")
+          h3.flexbox-title Доступно
+          p.flexbox-text получаешь месяц практики <br>по цене одного урока с<br>преподавателем
+        div 
+          img(src="../../images/svg/Icon_apps.svg")
+          h3.flexbox-title Гибко
+          p.flexbox-text выбираешь сколько<br>времени уделять практике<br>каждую неделю
+        div
+          img(src="../../images/svg/Icon_timer.svg")
+          h3.flexbox-title Практично
+          p.flexbox-text расширяешь активный<br>словарный запас любого<br>уровня
+        div 
+          img(src="../../images/svg/Icon_pie_chart.svg")
+          h3.flexbox-title Эффективно
+          p.flexbox-text учишься по методике учителя<br>с Кембриджским<br>дипломом Delta
+    section.why-this
+      h2 Этот тренажер создан для тебя, если ты
+      container
+        div
+          h3 Хочешь эффективно<br>общаться на английском
+          p ты не будешь разбирать времена, учить правила и<br>делать грамматические упражннения
+        div
+          h3 Не любишь учить<br>теорию
+          p тебе надоело искать слова и<br>запинаться
+        div 
+          h3 Хочешь овладеть<br>коммуникацией
+          p понимать носителей, использовать разговорные<br>фразы, говорить
+    section.creator-of-nail-this
+      .about-creator  
+        h2 Создатель тренажера
+        h3 Юлия Беймлина
+        ul 
+          li Выиграла американскую стипендию Фулбрайт на учебу и<br>преподавание в США
+          li Выступала на профильных конференциях для преподавателей
+          li Получила Кембриджский диплом по методике преподавания Delta
+          li Преподавала в 5 странах
+          li Тренировала учителей английского в языковых и частных школах
+      .creator-of-nail-this-img 
+        img(src="../../images/creator_of_nail-this.jpg")
+    article.proof-photos 
+      .diplom1
+        img(src="../../images/image5.png")
+      .diplom2 
+        img(src="../../images/image6.png")
+      .diplom3 
+        img(src="../../images/image7.png")
+    section.what-ull-b-doing 
+      h2 Каждую неделю в закрытой группе ты<br>повторяешь простые действия
+      div.standingded  
+        .first-b-doing 
+          h3 Делаешь 2 задания
+          .b-doing-text 
+            p Задания публикуются в закрытой группе по понедельникам и пятницам.<br>В удобное время ты смотришь короткую запись разговора носителей, отвечаешь на вопросы и<br>разбираешь десяток разговорных фраз из видео.<br>Ты записываешь ответы в комментарии к заданию. Куратор дает обратную связь.
+        .second-b-doing 
+          h3 Говоришь с новым напарником
+          .b-doing-text 
+            p Напарник — это участник тренажера твоего уровня.<br>В удобное время ты созваниваешься с напарником, обсуждаешь задание и<br>используешь новые фразы из задания.<br>Запись беседы с напарником ты выкладываешь в закрытую группу и получаешь<br>фидбэк от других участников..
+        .third-b-doing 
+          h3 Получаешь неограниченную<br> поддержку и практику
+          .b-doing-text 
+            p Ты можешь разговаривать с напарником и другими участниками без лимита.<br>Доступ к помощи куратора и участников 24/7.<br>Раз в неделю ты можешь прийти на групповую встречу с куратором, получить обратную<br>связь и дополнительный разбор заданий.
+
+
+    
