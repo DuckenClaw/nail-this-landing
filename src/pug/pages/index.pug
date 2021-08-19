@@ -1,96 +1,178 @@
 extends ../layout/layout.pug
 
 block content
+
+
   header.header 
-    .header-logo 
-      img(src="../../images/image1.png")
-    nav.nav
-      ul.nav-ul 
-        li 
-          a(href="") Для кого
-        li 
-          a(href="") О создателе
-        li 
-          a(href="") Как устроена практика
-        li 
-          a(href="") Отзывы о тренажере
-        li 
-          a(type="button" href="") Получить демо-версию
+    .container
+      .header-content
+        .header-logo 
+          img(src="../../images/image1.png")
+        nav.nav
+          ul.nav-ul 
+            li 
+              a(href="#") Для кого
+            li 
+              a(href="#") О создателе
+            li 
+              a(href="#") Как устроена практика
+            li 
+              a(href="#") Отзывы о тренажере
+            li 
+              a(type="button" href="#") Получить демо-версию
+
 
   main.main
-    div.say-goodbye 
-      article
-        h1.say-goodbye Скажи "Goodbye"
-        p.say-goodbye неловкости в английском 
-        p.say-goodbye с разговорным тренажёром <em>Nail this</em>
-        a(type="button" href="") Получить демо-версию
-      .say-goodbyeimg
-        img(src="../../images/look_mob-41.png")
-    section.elaboration
-      h2.elaboration Тренажер <em>Nail this</em> это
-      container.flex-container
-        div 
-          img(src="../../images/svg/Icon_purse.svg")
-          h3.flexbox-title Доступно
-          p.flexbox-text получаешь месяц практики <br>по цене одного урока с<br>преподавателем
-        div 
-          img(src="../../images/svg/Icon_apps.svg")
-          h3.flexbox-title Гибко
-          p.flexbox-text выбираешь сколько<br>времени уделять практике<br>каждую неделю
-        div
-          img(src="../../images/svg/Icon_timer.svg")
-          h3.flexbox-title Практично
-          p.flexbox-text расширяешь активный<br>словарный запас любого<br>уровня
-        div 
-          img(src="../../images/svg/Icon_pie_chart.svg")
-          h3.flexbox-title Эффективно
-          p.flexbox-text учишься по методике учителя<br>с Кембриджским<br>дипломом Delta
-    section.why-this
-      h2 Этот тренажер создан для тебя, если ты
-      container
-        div
-          h3 Хочешь эффективно<br>общаться на английском
-          p ты не будешь разбирать времена, учить правила и<br>делать грамматические упражннения
-        div
-          h3 Не любишь учить<br>теорию
-          p тебе надоело искать слова и<br>запинаться
-        div 
-          h3 Хочешь овладеть<br>коммуникацией
-          p понимать носителей, использовать разговорные<br>фразы, говорить
-    section.creator-of-nail-this
-      .about-creator  
-        h2 Создатель тренажера
-        h3 Юлия Беймлина
-        ul 
-          li Выиграла американскую стипендию Фулбрайт на учебу и<br>преподавание в США
-          li Выступала на профильных конференциях для преподавателей
-          li Получила Кембриджский диплом по методике преподавания Delta
-          li Преподавала в 5 странах
-          li Тренировала учителей английского в языковых и частных школах
-      .creator-of-nail-this-img 
-        img(src="../../images/creator_of_nail-this.jpg")
-    article.proof-photos 
-      .diplom1
-        img(src="../../images/image5.png")
-      .diplom2 
-        img(src="../../images/image6.png")
-      .diplom3 
-        img(src="../../images/image7.png")
-    section.what-ull-b-doing 
-      h2 Каждую неделю в закрытой группе ты<br>повторяешь простые действия
-      div.standingded  
-        .first-b-doing 
-          h3 Делаешь 2 задания
-          .b-doing-text 
-            p Задания публикуются в закрытой группе по понедельникам и пятницам.<br>В удобное время ты смотришь короткую запись разговора носителей, отвечаешь на вопросы и<br>разбираешь десяток разговорных фраз из видео.<br>Ты записываешь ответы в комментарии к заданию. Куратор дает обратную связь.
-        .second-b-doing 
-          h3 Говоришь с новым напарником
-          .b-doing-text 
-            p Напарник — это участник тренажера твоего уровня.<br>В удобное время ты созваниваешься с напарником, обсуждаешь задание и<br>используешь новые фразы из задания.<br>Запись беседы с напарником ты выкладываешь в закрытую группу и получаешь<br>фидбэк от других участников..
-        .third-b-doing 
-          h3 Получаешь неограниченную<br> поддержку и практику
-          .b-doing-text 
-            p Ты можешь разговаривать с напарником и другими участниками без лимита.<br>Доступ к помощи куратора и участников 24/7.<br>Раз в неделю ты можешь прийти на групповую встречу с куратором, получить обратную<br>связь и дополнительный разбор заданий.
+    .container 
+      .features  
+        article
+          h1.features-title  Скажи "Goodbye"
+          p.features-text неловкости в английском с разговорным тренажёром <em>Nail this</em>
+          .features-img-mobile
+            img(src="../../images/look_mob-41.png")
+          a(type="button" href="#") Получить демо-версию
+        .features-img-laptop 
+          img(src="../../images/look_mob-41.png")
+    .container 
+      section.elaboration
+        h2.elaboration Тренажер <em>Nail this</em> это
+        .elaboration-wrapper
+          .elaboration-content  
+            img(src="../../images/svg/Icon_purse.svg")
+            h3.elaboration-title Доступно
+            p.elaboration-text получаешь месяц практики по цене одного урока с преподавателем
+          .elaboration-content
+            img(src="../../images/svg/Icon_apps.svg")
+            h3.elaboration-title Гибко
+            p.elaboration-text выбираешь сколько времени уделять практике каждую неделю
+          .elaboration-content
+            img(src="../../images/svg/Icon_timer.svg")
+            h3.elaboration-title Практично
+            p.elaboration-text расширяешь активный словарный запас любого уровня
+          .elaboration-content
+            img(src="../../images/svg/Icon_pie_chart.svg")
+            h3.elaboration-title Эффективно
+            p.elaboration-text учишься по методике учителя с Кембриджским дипломом Delta
+      section.whythis
+        h2.whythis-title Этот тренажер создан для тебя, если ты
+        .whythis-wrapper
+          .whythis-content 
+            h3 Хочешь эффективно<br>общаться на английском
+            p ты не будешь разбирать времена, учить правила и<br>делать грамматические упражннения
+          .whythis-content
+            h3 Не любишь учить<br>теорию
+            p тебе надоело искать слова и<br>запинаться
+          .whythis-content 
+            h3 Хочешь овладеть<br>коммуникацией
+            p понимать носителей, использовать разговорные<br>фразы, говорить
+      .creator
+        .creator-about   
+          h2.creator-position Создатель тренажера
+          h3.creator-name Юлия Беймлина
+          .creator-img-mobile 
+            img(src="../../images/creator_of_nail-this.jpg")  
+          ul.creator-about-list  
+            li Выиграла американскую стипендию Фулбрайт на учебу и<br>преподавание в США
+            li Выступала на профильных конференциях для преподавателей
+            li Получила Кембриджский диплом по методике преподавания Delta
+            li Преподавала в 5 странах
+            li Тренировала учителей английского в языковых и частных школах
+        .creator-img-laptop  
+          img(src="../../images/creator_of_nail-this.jpg")
+      .diploms  
+        .diplom1
+          img(src="../../images/image5.png")
+        .diplom2 
+          img(src="../../images/image6.png")
+        .diplom3 
+          img(src="../../images/image7.png")
+      .steps  
+        h2 Каждую неделю в закрытой группе ты<br>повторяешь простые действия
+        .steps-wrapper
+          .steps-img   
+            img(src="../../images/standingded.png") 
+          .steps-content   
+            .step-first  
+              h3 Делаешь 2 задания
+              .step-text 
+                p Задания публикуются в закрытой группе по понедельникам и пятницам.<br>В удобное время ты смотришь короткую запись разговора носителей, отвечаешь на вопросы и<br>разбираешь десяток разговорных фраз из видео.<br>Ты записываешь ответы в комментарии к заданию. Куратор дает обратную связь.
+            .step-second 
+              h3 Говоришь с новым напарником
+              .step-text
+                p Напарник — это участник тренажера твоего уровня.<br>В удобное время ты созваниваешься с напарником, обсуждаешь задание и<br>используешь новые фразы из задания.<br>Запись беседы с напарником ты выкладываешь в закрытую группу и получаешь<br>фидбэк от других участников..
+            .step-third 
+              h3 Получаешь неограниченную<br> поддержку и практику
+              .step-text 
+                p Ты можешь разговаривать с напарником и другими участниками без лимита.<br>Доступ к помощи куратора и участников 24/7.<br>Раз в неделю ты можешь прийти на групповую встречу с куратором, получить обратную<br>связь и дополнительный разбор заданий.
+      .example 
+        h2.example-title Смотри как участница тренажера разговаривает с<br>напарниками по заданию в начале и сейчас
+        .example-videos 
+          video(src="../../video/sample-5s.mp4" poster="../../images/video1.png" controls)
+          video(src="../../video/sample-5s.mp4" poster="../../images/video2.png" controls)
+      .cost
+        h2.cost-title Сколько стоит подписаться на тренажер Nail this?
+        .cost-wrapper
+          .cost-months
+            h3.cost-wrapper-title 1 месяц
+            p.cost-wrapper-text Убедись в эффективности тренажера
+            p.cost-wrapper-price 3000 ₽
+          .cost-months 
+            h3.cost-wrapper-title 3 месяца
+            p.cost-wrapper-text Экономь 2 500 ₽ и получи первый LEVEL UP
+            p.cost-wrapper-price 6500 ₽
+          .cost-months 
+            h3.cost-wrapper-title 6 месяца
+            p.cost-wrapper-text Экономь 5000 ₽ и почувствуй рывок
+            p.cost-wrapper-price 13000 ₽
+          .cost-months 
+            h3.cost-wrapper-title 12 месяцев
+            p.cost-wrapper-text Экономь 16 000 ₽ и получи уверенность в себе
+            p.cost-wrapper-price 20000 ₽
+        .cost-button     
+          a.demo-button(type="button" href="#") Получить демо-версию
+      .feedback
+        h3.feedback-title Что участники говорят о нас?
+        .feedback-wrapper
+          .feedback-wrapper-container  
+            .feedback-wrapper-text 
+              p.feedback-text Мне стало не так страшно разговаривать на английском, я думаю, что это большой плюс. А еще фразы, которые мы используем в заданиях, помогают расширять словарный запас!
+            .feedback-author-container
+            .feedback-authors-photo
+              img(src="../../images/Irinafeedback.png")
+            p.feedback-author-name Ирина Х,
+            p.feedback-author-position Бизнес аналитик Techno Ltd
+          .feedback-wrapper-container 
+            .feedback-wrapper-text 
+              p.feedback-text В повседневной жизни я получаю очень много информации из англоязычных источников, приходится много переписываться на английском, но разговорной практики не хватает. Курс устраняет этот пробел.
+            .feedback-authors-photo
+              img(src="../../images/Dmitriyfeedback.png")
+            p.feedback-author-name Дмитрий Б,
+            p.feedback-author-position COO &amp; Со-основатель CrocoMobi
+          .feedback-wrapper-container 
+            .feedback-wrapper-text 
+              p.feedback-text Однозначно ощущаю пользу от тренажера. Получается лучше формулировать мысли на английском + уменьшен страх разговора на языке, меньше теряюсь при реальном разговоре. 
+            .feedback-authors-photo
+              img(src="../../images/Ruslanfeedback.png")
+            p.feedback-author-name Руслан Ш,
+            p.feedback-author-position CEO Donor Search
+      .demo-video
+        video(src="../../video/sample-5s.mp4" poster="../../images/video1.png" controls)
 
-
+  footer.footer 
+    .getdemo 
+      h2.getdemo-title Получи Демо тренажера!
+      p.getdemo-text Свяжись с куратором
+    .social
+      .social-item 
+        .telegram-img 
+          img(src="../../images/telegram.png") 
+        p.social-text telegram
+      .social-item 
+        .whattsapp-img
+          img(src="../../images/whattsapp.png")
+        p.social-text whattsapp
+      .social-item 
+        .messenger-img 
+          img(src="../../images/messenger.png")
+        p.social-text messenger 
     
