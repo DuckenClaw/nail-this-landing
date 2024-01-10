@@ -1,5 +1,5 @@
-import module from './module'
-import jquery from 'jquery'
+import './module'
+import 'jquery'
 window.$ = window.jQuery = jquery;
 
 

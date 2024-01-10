@@ -11219,16 +11219,14 @@ return jQuery;
 },{"process":"../../../node_modules/process/browser.js"}],"../../js/index.js":[function(require,module,exports) {
 "use strict";
 
-var _module2 = _interopRequireDefault(require("./module"));
+require("./module");
 
-var _jquery = _interopRequireDefault(require("jquery"));
+require("jquery");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-window.$ = window.jQuery = _jquery.default;
+window.$ = window.jQuery = jquery;
 $(document).ready(function () {
   console.log($('body'));
-  (0, _module2.default)();
+  module();
 });
 },{"./module":"../../js/module.js","jquery":"../../../node_modules/jquery/dist/jquery.js"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -11258,7 +11256,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52479" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52177" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
